@@ -107,6 +107,17 @@
     padding: .5rem 2rem;
 }
 
+.infoArea{
+    background-color: var(--white-color);
+    border-radius: 10px;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    display: flex;
+    left: 55px;
+    top: 10px;
+}
+
 .img-wrapper {
     height: 12em;
     display: flex;
@@ -168,6 +179,7 @@
 }
 .notasIcon p{
     margin: 0;
+    color: var(--white-color);
 }
 
 .starBg{
