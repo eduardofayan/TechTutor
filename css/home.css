@@ -1,0 +1,302 @@
+/* Header */
+.header {
+    width: 100%;
+    transition: 0.3s;
+    position: fixed;
+}
+
+.header.sticky {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    background: var(--white-color);
+    z-index: 100000;
+}
+
+.sticky .nav-link {
+    color: var(--primary-color) !important;
+}
+
+.img-orange {
+    display: none;
+}
+
+/*Nav*/
+
+.nav-link {
+    font-weight: 400;
+}
+
+
+.bg-fundo {
+    background: transparent;
+}
+
+
+/* Primeira Section */
+
+.one-background {
+    display: flex;
+    background-image: url("../img/backgroundhome.png");
+    height: 130vh;
+    max-width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.apresentation {
+    height: 100vh;
+}
+
+.apresentation p, .apresentation h3 {
+    color: var(--white-color);
+}
+
+
+.apresentation h3 {
+    font-size: 40px;
+}
+
+
+/* Segunda Section - Mini Cards*/
+.cards-home {}
+
+.card-home {
+    width: 200px;
+    height: 200px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+
+}
+
+.position-ajust {
+    top: -280px;
+}
+
+/*Card Icones*/
+.bx {
+    font-size: 50px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.cards-icons {
+    align-items: center;
+    padding: 1rem;
+}
+
+.cards-text {
+    padding-bottom: .5rem;
+    color: var(--primary-color);
+}
+
+/*Terceira Section - Card*/
+.playlistRec h1 {
+    color: var(--primary-color);
+}
+
+.playlistRec p {
+    color: var(--gray-color);
+    padding: .5rem 2rem;
+}
+
+.img-wrapper {
+    height: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img-wrapper img {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.card-title, .card-text {
+    color: var(--gray-color);
+}
+
+
+.card-body {
+    padding: .5rem 1.5rem;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carouse-inner {
+    padding: 1rem;
+}
+
+.card {
+    --bs-card-border-color: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.footerCard{
+    height: 60px;
+    align-items: flex-end;
+    padding: 0.5rem 2rem;
+}
+
+.bx-play-circle{
+    font-size: 30px;
+}
+.bxs-star{
+    color: var(--white-color);
+    font-size: 12px !important;
+    padding: .2rem;
+}
+
+.notasIcon{
+    background-color: #FFC90C;
+    width: 50%;
+    border-radius: 10px;
+    padding: .1rem 2rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+.notasIcon p{
+    margin: 0;
+}
+
+.starBg{
+    border-radius: 20px;
+    padding: 0;
+    align-items: center;
+    display: flex;
+}
+
+/*Quarta Section - Banner Estudos*/
+
+.bannerEstudo {
+    background: var(--primary-color);
+    padding: 2rem;
+    height: 60vh;
+}
+
+.bannerEstudo h1 {
+    color: var(--white-color);
+}
+
+.imgEstudo{
+    position: relative;
+}
+
+/*Quinta Section - Banner Estudos*/
+
+.fundador{
+    margin: 8rem 1rem;
+}
+
+.fundador h1 {
+    color: var(--primary-color);
+}
+
+.fundador p {
+    color: var(--gray-color);
+}
+
+.fundador button {
+    padding: .5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background: var(--white-color);
+
+}
+
+.fundador button:hover {
+    background: var(--primary-color);
+}
+
+/*Sexta Section - Feedbacks*/
+
+.backgroundFeedback {
+    background: var(--primary-color);
+    padding: 2rem;
+    height: 70vh;
+}
+
+.iconeFeedback{
+    background: var(--white-color);
+    border-radius: 100px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 83%;
+}
+
+.boxAluno {
+    width: 70%;
+    height: 25%;
+    background: #FFFFFF;
+    border: 4px solid #FFC90C;
+    box-shadow: 5px 11px 52px -18px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 1.5rem;
+}
+
+.boxProfessor {
+    width: 70%;
+    height: 40%;
+    background: #FFFFFF;
+    border: 4px solid #FFC90C;
+    box-shadow: 5px 11px 52px -18px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 1.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.tituloFeedback {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.subtituloFeedback {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.paragrafoFeedback {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.imgAluno {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    right: 100px;
+    top: -28px;
+    border: 9px solid #FFA500;
+}
+
+.imgProfessor {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    right: 200px;
+    top: 0;
+    border: 9px solid #FFA500;
+}

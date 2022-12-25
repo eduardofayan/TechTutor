@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+:root {
+    --font-family: 'Lato', sans-serif;
+    --white-color: #ffffff;
+    --primary-color: #FFA500;
+    --gray-color: #484848;
+}
+
+
+main{
+    top: 152px;
+}
