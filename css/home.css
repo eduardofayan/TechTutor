@@ -31,6 +31,16 @@
     background: transparent;
 }
 
+.sticky .bx-menu{
+    color: var(--primary-color);
+}
+
+.bx-menu{
+    font-size: 30px !important;
+    padding: 0 !important;
+    color: var(--white-color);
+}
+
 @media only screen and (max-width: 992px) {
     .navbar-brand {
         width: 60%;
@@ -38,6 +48,7 @@
 
     .navbar-toggler {
         margin: 1.5rem;
+        border: none;
     }
 }
 
@@ -68,7 +79,7 @@
 
 @media only screen and (max-width: 992px) {
     .containerOneBg {
-        margin-top: 7rem;
+        margin-top: 8rem;
         text-align: center;
     }
 
@@ -85,7 +96,7 @@
     }
 
     .apresentation {
-        height: 70vh;
+        height: 50vh;
     }
 }
 
@@ -327,13 +338,20 @@
     height: 500px;
 }
 
+@media only screen and (min-width: 337px) and (max-width: 402px) {
+    .bannerEstudo {
+        height: 30vh;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .imgEstudo {
         height: 350px;
     }
 
     .bannerEstudo {
-        padding: 4rem;
+        padding: 2rem;
+        height: 45vh;
     }
 
     .fundador {
@@ -608,6 +626,11 @@
     color: var(--white-color) !important;
     list-style: none;
     padding: 0;
+}
+
+.listaFooter a{
+    text-decoration: none;
+    color: var(--white-color);
 }
 .description{
     font-size: 3rem;
