@@ -31,6 +31,16 @@
     background: transparent;
 }
 
+@media only screen and (max-width: 992px) {
+    .navbar-brand {
+        width: 60%;
+    }
+
+    .navbar-toggler {
+        margin: 1.5rem;
+    }
+}
+
 
 /* Primeira Section */
 
@@ -56,6 +66,30 @@
     font-size: 40px;
 }
 
+@media only screen and (max-width: 992px) {
+    .containerOneBg {
+        margin-top: 7rem;
+        text-align: center;
+    }
+
+    .containerOneBg img {
+        width: 300px;
+    }
+
+    .containerOneBg h3 {
+        font-size: 25px;
+    }
+
+    .containerOneBg p {
+        font-size: 14px;
+    }
+
+    .apresentation {
+        height: 70vh;
+    }
+}
+
+
 
 /* Segunda Section - Mini Cards*/
 .cards-home {}
@@ -68,8 +102,8 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    background: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    background: var(--white-color);
+    border: 1px solid var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(2px);
     border-radius: 15px;
@@ -98,6 +132,12 @@
 }
 
 /*Terceira Section - Card*/
+
+.thirdSession {
+    top: -200px;
+    position: relative;
+}
+
 .playlistRec h1 {
     color: var(--primary-color);
 }
@@ -107,14 +147,18 @@
     padding: .5rem 2rem;
 }
 
-.infoArea{
+.recursosList {
+    padding: 2rem;
+}
+
+.infoArea {
     background-color: var(--white-color);
     border-radius: 10px;
     justify-content: center;
     position: absolute;
     width: 30%;
     display: flex;
-    left: 55px;
+    left: 25%;
     top: 10px;
 }
 
@@ -152,24 +196,27 @@
     --bs-card-border-color: none;
     width: 100%;
     justify-content: center;
+    text-decoration: none;
+    color: #000000 !important;
 }
 
-.footerCard{
+.footerCard {
     height: 60px;
     align-items: flex-end;
     padding: 0.5rem 2rem;
 }
 
-.bx-play-circle{
+.bx-play-circle {
     font-size: 30px;
 }
-.bxs-star{
+
+.bxs-star {
     color: var(--white-color);
     font-size: 12px !important;
     padding: .2rem;
 }
 
-.notasIcon{
+.notasIcon {
     background-color: #FFC90C;
     width: 50%;
     border-radius: 10px;
@@ -177,17 +224,91 @@
     justify-content: center;
     align-items: flex-end;
 }
-.notasIcon p{
+
+.notasIcon p {
     margin: 0;
     color: var(--white-color);
 }
 
-.starBg{
+.starBg {
     border-radius: 20px;
     padding: 0;
     align-items: center;
     display: flex;
 }
+
+.buttonRecursos a {
+    padding: .5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background: var(--white-color);
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+    color: #000000 !important;
+}
+
+.buttonRecursos a:hover {
+    background: var(--primary-color);
+}
+
+@media only screen and (min-width: 457px) and (max-width: 575px) {
+    .recursosList {
+        padding: 0 4rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .infoArea {
+        left: auto;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 766px) {
+    .recursosList {
+        padding: 0 8rem;
+    }
+
+    .infoArea {
+        left: 15%;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .recursosList {
+        padding: 0 14rem;
+    }
+
+    .infoArea {
+        left: 15%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .thirdSession {
+        top: -200px;
+    }
+    .playlistRec p {
+        padding: 0.5rem;
+    }
+    .buttonRecursos a {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .infoArea {
+        left: 15%;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .infoArea {
+        left: 20%;
+    }
+}
+
+
 
 /*Quarta Section - Banner Estudos*/
 
@@ -201,13 +322,34 @@
     color: var(--white-color);
 }
 
-.imgEstudo{
+.imgEstudo {
     position: relative;
+    height: 500px;
 }
 
-/*Quinta Section - Banner Estudos*/
+@media only screen and (max-width: 768px) {
+    .imgEstudo {
+        height: 350px;
+    }
 
-.fundador{
+    .bannerEstudo {
+        padding: 4rem;
+    }
+
+    .fundador {
+        margin: 6rem 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 403px) {
+    .imgEstudo {
+        height: 250px;
+    }
+}
+
+/*Quinta Section - Fundador*/
+
+.fundador {
     margin: 8rem 1rem;
 }
 
@@ -219,16 +361,36 @@
     color: var(--gray-color);
 }
 
-.fundador button {
+.fundador a {
     padding: .5rem;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
     background: var(--white-color);
+    text-decoration: none;
+    color: #000000;
+    width: 50%;
+    text-align: center;
 
 }
 
-.fundador button:hover {
+.fundador a:hover {
     background: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .fundador {
+        margin: 6rem 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .fundador h1, .fundador p {
+        text-align: center;
+    }
+
+    .fundador a {
+        width: 70%;
+    }
 }
 
 /*Sexta Section - Feedbacks*/
@@ -236,39 +398,58 @@
 .backgroundFeedback {
     background: var(--primary-color);
     padding: 2rem;
-    height: 70vh;
+    height: 600px;
 }
 
-.iconeFeedback{
+.iconeFeedback {
     background: var(--white-color);
     border-radius: 100px;
     color: var(--primary-color);
     display: flex;
     justify-content: center;
-    width: 50%;
-    height: 83%;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
 }
 
 .boxAluno {
     width: 70%;
-    height: 25%;
-    background: #FFFFFF;
+    max-height: 20%;
+    min-height: 20%;
+    background: var(--white-color);
     border: 4px solid #FFC90C;
     box-shadow: 5px 11px 52px -18px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     margin: 1.5rem;
 }
 
+.textAlunoFeedback {
+    position: relative;
+    bottom: 170px;
+    padding-left: 7rem;
+    padding-right: 1rem;
+}
+
 .boxProfessor {
     width: 70%;
-    height: 40%;
-    background: #FFFFFF;
+    min-height: 26%;
+    max-height: 26%;
+    background: var(--white-color);
     border: 4px solid #FFC90C;
     box-shadow: 5px 11px 52px -18px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     margin: 1.5rem;
     align-items: center;
-    display: flex;
+}
+
+.textProfFeedback {
+    position: relative;
+    min-width: 100%;
+    right: 2px;
+    top: -250px;
+    padding-left: 8rem;
+    padding-right: 1rem;
+
 }
 
 .tituloFeedback {
@@ -276,7 +457,7 @@
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .subtituloFeedback {
@@ -284,7 +465,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .paragrafoFeedback {
@@ -292,7 +473,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .imgAluno {
@@ -300,7 +481,7 @@
     width: 200px;
     height: 200px;
     right: 100px;
-    top: -28px;
+    top: -6px;
     border: 9px solid #FFA500;
 }
 
@@ -309,6 +490,159 @@
     width: 300px;
     height: 300px;
     right: 200px;
-    top: 0;
+    top: -25px;
     border: 9px solid #FFA500;
+}
+
+.bxs-camera-movie, .bxs-file-pdf, .bx-user-circle {
+    padding: 1rem !important;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+    .tituloFeedback {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .subtituloFeedback {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .paragrafoFeedback {
+        text-align: center;
+    }
+
+    .backgroundFeedback {
+        height: 90%;
+    }
+}
+
+/*--Sétima Section - Formulario Card */
+
+.sectionForm {
+    height: 200px;
+}
+
+.formHome {
+    width: 60%;
+    height: 500px;
+    background: var(--white-color);
+    border: 2px solid #FFA500;
+    border-radius: 20px;
+    position: relative;
+    top: 150px;
+}
+
+.titleForm {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    color: #FFA500;
+}
+
+.formGroup {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.formControl {
+    width: 50%;
+    background: var(--white-color);
+    border: 1px solid #FFA500 !important;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+}
+
+.buttonForm {
+    background: #FFA500;
+    color: var(--white-color);
+    border-radius: 10px;
+    border: none;
+    padding: .5rem 1rem;
+    width: 25%;
+}
+
+@media only screen and (max-width: 425px) {
+    .formControl {
+        width: 100%;
+    }
+
+    .buttonForm {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .formHome {
+        width: 100%;
+        top: 10px;
+        height: 225%;
+    }
+
+}
+
+/*Footer*/
+
+.fundoFooter {
+    background: url("../img/fundofooter.png");
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+}
+
+.Copyright {
+    border-top: 2px var(--white-color) solid;
+    color: var(--white-color);
+}
+
+.logoFooter {
+    width: 1000px;
+    height: auto;
+}
+
+.listaFooter {
+    color: var(--white-color) !important;
+    list-style: none;
+    padding: 0;
+}
+.description{
+    font-size: 3rem;
+    color: var(--gray-color);
+    position: fixed;
+    left: 94%;
+    bottom: 1rem;
+  
+    visibility: hidden;
+    opacity: 0;
+  
+    transition: 0.3s;
+    transform: translateY(100%);
+  }
+  
+  .description.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .description:hover{
+    color: #000000;
+  }
+ 
+@media only screen and (max-width: 767px) {
+    .listaFooter {
+        text-align: center;
+    }
+
+    .logoFooter {
+        width: 500px;
+    }
+    .description {
+        left: 78%;
+        bottom: 0;
+      }
 }
