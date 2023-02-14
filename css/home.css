@@ -125,6 +125,12 @@
     top: -280px;
 }
 
+@media only screen and (max-width: 767px){
+    .position-ajust {
+        top: -320px;
+    }
+}
+
 /*Card Icones*/
 .bx {
     font-size: 50px;
@@ -668,4 +674,7 @@
         left: 78%;
         bottom: 0;
       }
+      .fundoFooter {
+        height: 110vh;
+    }
 }
