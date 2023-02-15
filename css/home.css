@@ -83,11 +83,6 @@
     }
 }
 
-@media only screen and (max-height: 650px) {
-    .one-background {
-        height: 140vh;
-    }
-}
 
 
 @media only screen and (max-width: 992px) {
