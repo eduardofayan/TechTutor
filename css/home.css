@@ -77,17 +77,18 @@
     font-size: 40px;
 }
 
-@media only screen and (min-height: 650px) {
+@media only screen and (min-height: 696px) {
+    .one-background {
+        height: 115vh;
+    }
+}
+
+@media only screen and (max-height: 650px) {
     .one-background {
         height: 140vh;
     }
 }
 
-@media only screen and (min-height: 737px) {
-    .one-background {
-        height: 120vh;
-    }
-}
 
 @media only screen and (max-width: 992px) {
     .containerOneBg {
