@@ -77,7 +77,7 @@
     font-size: 40px;
 }
 
-@media only screen and (min-height: 696px) {
+@media only screen and (min-height: 696px) and (max-width: 992px) {
     .one-background {
         height: 110vh;
     }
