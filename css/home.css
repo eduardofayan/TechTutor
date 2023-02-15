@@ -1,29 +1,13 @@
-/* Header */
-.header {
-    width: 100%;
-    transition: 0.3s;
-    position: fixed;
-}
-
-.header.sticky {
-    margin: 0;
-    padding: 5px 0 5px 0;
-    background: var(--white-color);
-    z-index: 100000;
-}
-
-.sticky .nav-link {
-    color: var(--primary-color) !important;
-}
-
-.img-orange {
-    display: none;
-}
 
 /*Nav*/
 
 .nav-link {
     font-weight: 400;
+    color: var(--white-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--gray-color) !important;
 }
 
 
