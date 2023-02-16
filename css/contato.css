@@ -1,0 +1,8 @@
+.contato .card-home{
+    background: var(--primary-color) !important;
+    color: var(--white-color) !important;
+    border: none;
+}
+ .contato .cards-text p{
+    color: var(--white-color) !important;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Tutor</title>
+
+    <!--Bootstrap Framework (CSS - Only)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!--Folhas de Estilo CSS-->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contato.css">
+
+    <!--Font Family - Google Fonts Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <!--BoxIcon - Lib de Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+
+    <!-- Carousel-->
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-fundo" aria-label="Fifth navbar example">
+            <div class="container-fluid">
+                <a class="img-white navbar-brand" href="index.html"><img class="img-fluid" style="width:400px"
+                        src="img/logotechtutor.png" alt="Logo TechTutor Branca"></a>
+                <a class="img-orange navbar-brand" href="index.html"><img class="img-fluid" style="width:400px"
+                        src="img/logotechtutorlaranja.png" alt="Logo TechTutor Branca"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class='bx bx-menu'></i>
+                </button>
+
+                <div class="collapse navbar-collapse me-5 pe-5" id="navbarsExample05">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-5">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-5">
+                            <a class="nav-link " aria-current="page" href="recursos.html">Recursos</a>
+                        </li>
+                        <li class="nav-item px-5">
+                            <a class="text-nowrap nav-link" aria-current="page" href="quemsomos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item px-5 dropdown">
+                            <a class="nav-link menuSelect active " aria-current="page" href="contato.html">Contato</a>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Primeira Section-->
+        <section class="one-background">
+            <div class="container containerOneBg d-flex">
+                <div class="row align-items-center justify-content-center apresentation">
+                    <div class="col-lg-6 order-lg-0 order-2">
+                        <img class="img-fluid" src="img/imgcontato.png" alt="Professroes ajudando um ao outro">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Entre em contato conosco!</h3>
+                        <p>Divulge o seu recurso educacional aqui na nossa plataforma, ou então entre em contato para
+                            sanarmos suas dúvidas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Segunda Section - Mini Cards-->
+        <section class="">
+            <div class="cards-home position-relative d-flex justify-content-center">
+                <div class="row contato container w-100 align-items-center justify-content-center">
+                    <div class="col-lg-3 col-12 d-flex justify-content-center pb-5 pb-lg-0">
+                        <div class="card-home  d-flex flex-column justify-content-center">
+                            <div class="cards-icons"><i class='bx bxs-time'></i></div>
+                            <div class="cards-text">
+                                <p><b>Horário de Funcionamento</b></p>
+                                <p>
+                                    Das 09:00 as 12:00 e
+                                    Das 14:00 as 17:00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 d-flex justify-content-center pb-5 pb-lg-0">
+                        <div class="card-home  d-flex flex-column justify-content-center">
+                            <div class="cards-icons"><i class='bx bxs-book-bookmark'></i></div>
+                            <div class="cards-text">
+                                <p><b>Endereço</b></p>
+                                <p>Rua Maria Evanilde Leite Pinheiro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 d-flex justify-content-center pb-5 pb-lg-0">
+                        <div class="card-home  d-flex flex-column justify-content-center">
+                            <div class="cards-icons"><i class='bx bx-globe'></i></div>
+                            <div class="cards-text">
+                                <p><b>Telefone</b></p>
+                                <p>+55 11 95222-7447</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 d-flex justify-content-center pb-5 pb-lg-0">
+                        <div class="card-home  d-flex flex-column justify-content-center">
+                            <div class="cards-icons"><i class='bx bx-globe'></i></div>
+                            <div class="cards-text">
+                                <p><b>E-mail</b></p>
+                                <p>developereduardofayan <br>
+                                    @gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Terceira Section - Formulario Card-->
+        <section class="container sectionForm">
+            <div class="container d-flex align-items-center justify-content-center flex-column mx-auto m-0 formHome">
+                <h1 class="text-center titleForm">Solicitação de Contato</h1>
+                <p class="text-center px-5">Entre em contato atráves desse formúlario, que mais breve possivel lhe
+                    atenderemos!</p>
+                <form action="" class="w-100">
+                    <div class="d-flex align-items-center flex-column justify-content-center">
+                        <div class="formGroup ">
+                            <input type="text" class="formControl m-2" name="nome" id="title-name"
+                                placeholder="Nome Completo" required>
+                        </div>
+                        <div class="formGroup ">
+                            <input type="email" class="formControl m-2" name="email" id="title-email"
+                                placeholder="Email" required>
+                        </div>
+                        <div class="formGroup ">
+                            <textarea type="Mensagem" class="formControl m-2" name="Mensagem" id="title-Mensagem"
+                                placeholder="Mensagem" required></textarea>
+                        </div>
+                        <button class="mb-3 buttonForm" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="fundoFooter d-flex flex-column align-items-center justify-content-end">
+        <div class="row d-flex align-items-center justify-content-center w-100">
+            <div class="py-2 py-lg-0 col-md-3 col-12 d-flex flex-column align-items-center ">
+                <a class="" href="index.html">
+                    <img class="logoFooter img-fluid" src="img/logotechtutor.png" alt="Logo TechTutor Branca">
+                </a>
+            </div>
+            <div class="py-2 py-lg-0 col-md-2 col-12 ">
+                <ul class="listaFooter">
+                    <li>
+                        <h5><b>Mapa o Site</b></h5>
+                    </li>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="recursos.html">
+                        <li>Recursos</li>
+                    </a>
+                    <a href="quemsomos.html">
+                        <li>Quem Somos</li>
+                    </a>
+                    <a href="contato.html">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="py-2 py-lg-0 col-md-3 col-12 ">
+                <ul class="listaFooter">
+                    <li>
+                        <h5><b>Informações</b></h5>
+                    </li>
+                    <a href="tel:+5511952227447">
+                        <li>11 95222-7447</li>
+                    </a>
+                    <a href="mailto:developereduardofayan@gmail.com">
+                        <li>developereduardofayan@gmail.com</li>
+                    </a>
+                    <a href="">
+                        <li>Política de Privacidade</li>
+                    </a>
+                    <a href="">
+                        <li>Termo de Uso</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="Copyright p-2 text-center">
+            <p>Copyright © 2020 Todos os direitos reservados . Developed by Eduardo Fayan</p>
+        </div>
+        <div class="returnTop">
+            <a href="#" class="description" id="description"><i class='bx bxs-up-arrow-circle'></i></a>
+        </div>
+    </footer>
+
+    <!-- VLIBRAS -->
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!--Bootstrap Framework (JavaScript Bundle with Popper)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!--Script Scroll Header (Sticky)-->
+    <script src="js/scrollheader.js"></script>
+
+    <!--ReturnTop -->
+    <script src="js/returntop.js"></script>
+
+    <!--Jquery Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js"
+        integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+
+    <!--BoxIcon - Lib de Icons-->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
