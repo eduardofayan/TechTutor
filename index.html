@@ -14,6 +14,7 @@
     <!--Folhas de Estilo CSS-->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/coockie.css">
 
     <!--Font Family - Google Fonts Lato-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -429,7 +430,23 @@
             <a href="#" class="description" id="description"><i class='bx bxs-up-arrow-circle'></i></a>
         </div>
     </footer>
-
+    <!-- Banner Cookie-->
+    <div id="banner-cookie" class="banner-cookie-visible banner-cookie-animated" style="display:flex">
+        <div class="banner-cookie-container">
+            <div class="banner-cookie_text-box"><span class="banner-cookie_text">Nosso site utiliza cookies e
+                    tecnologias semelhantes para melhorar a sua experiência em nossos serviços, a fim de personalizar
+                    publicidades e recomendar conteúdos de seu interesse. <br>
+                    Ao utilizar nossos serviços, você concorda com
+                    tal monitoramento. Mas fique tranquilo(a) tudo isso segue as diretrizes da nossa <a
+                        class="banner-cookie-link banner-cookie_privacy-link" target="_blank" style="color:#0069de"
+                        href="{{asset('arquivos/politica_de_privacidade.pdf')}}"> Política de
+                        Privacidade</a> e do nosso <a class="banner-cookie-link banner-cookie_privacy-link"
+                        target="_blank" style="color:#0069de" href="{{asset('arquivos/termos_de_uso.pdf')}}"> Termo de
+                        Uso</a><span>.</span></span></div>
+            <div class="banner-cookie_button-box"><button class="banner-cookie_accept-button" onclick="fecharcoockie ()"
+                    style="background-color: var(--primary-color)">PROSSEGUIR</button></div>
+        </div>
+    </div>
     <!-- VLIBRAS -->
 
     <div vw class="enabled">
@@ -443,6 +460,7 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
+
     <!--Bootstrap Framework (JavaScript Bundle with Popper)-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -453,6 +471,9 @@
 
     <!--ReturnTop -->
     <script src="js/returntop.js"></script>
+
+    <!--Cookies -->
+    <script src="js/cookies.js"></script>
 
     <!--Jquery Scripts-->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
