@@ -15,10 +15,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90% !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .recursosbg{
+        height: 200vh;
+    }
+}
+@media only screen and (min-width: 575px) and (max-width: 992px) {
+    .boxLetramento .infoArea{
+        left: auto !important;
+        width: 33%;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    .boxLetramento .infoArea{
+        width: 27%;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .recursosbg{
-        height: 350vh;
+        height: 200vh;
     }
 }
